@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>被遗忘的20年</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('e18b79a10dc8f4dd9f4056efe9f28716.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      color: #ffd966;
+      text-align: center;
+      overflow: hidden;
+      animation: zoomInBg 60s ease-in-out infinite alternate;
+    }
+
+    @keyframes zoomInBg {
+      from { background-size: 100% auto; }
+      to { background-size: 110% auto; }
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 72px;
+      color: #ffefb3;
+      text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+      margin-top: 100px;
+      opacity: 0;
+      filter: blur(8px);
+      animation: titleFade 5s ease-out forwards;
+    }
+
+    @keyframes titleFade {
+      0% {
+        opacity: 0;
+        filter: blur(8px);
+        transform: translateY(-40px);
+      }
+      60% {
+        opacity: 1;
+        filter: blur(2px);
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: auto;
+      margin-bottom: 60px;
+      color: #f5deb3;
+      font-style: italic;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      animation: textFade 6s ease-in-out 2s forwards;
+    }
+
+    @keyframes textFade {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    iframe {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>被遗忘的20年</h1>
+  <p>献给那段被遗忘的岁月</p>
+
+  <iframe 
+    width="0" height="0"
+    src="https://www.youtube.com/embed/L229QDxDakU?autoplay=1&loop=1&playlist=L229QDxDakU"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+</body>
+</html>
